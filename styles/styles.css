@@ -73,6 +73,10 @@ button {
     background: var(--highlight);
 }
 
+a {
+    color: var(--highlight);
+}
+
 .flex-item,
 .grid-item {
     padding: 10px;
