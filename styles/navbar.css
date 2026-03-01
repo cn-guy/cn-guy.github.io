@@ -1,7 +1,8 @@
-nav{
+.navbar {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    padding: 0.5em;
 }
 
 nav ul{
@@ -25,6 +26,31 @@ nav ul li a:hover{
     color: var(--highlight);
 }
 
+#menu-toggle {
+    cursor: pointer;
+    color: var(--primary);
+    display: none;
+}
+
+#menu-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+#menu-toggle:hover {
+    color: var(--highlight);
+}
+
+.icons {
+    float: left;
+    display: block;
+}
+
+.right-nav {
+    float: right;
+    display: block;
+}
+
 .main{
     margin-top: 100px;
     padding: 0 0.5em;
@@ -37,4 +63,26 @@ nav ul li a:hover{
 }
 
 @media (min-width: 320px) and (max-width: 767px){
+    #menu-toggle {
+        display: block;
+    }
+
+    .right-nav {
+        position: fixed;
+        text-align: center;
+        width: 60%;
+        height: 100%;
+        top: 80px;
+        right: -100%;
+        transition: all 0.5s;
+        background-color: var(--secondary);
+    }
+
+    .right-nav li {
+        display: block;
+    }
+
+    .right-nav.active {
+        right: 0;
+    }
 }

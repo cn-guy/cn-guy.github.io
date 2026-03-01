@@ -8,18 +8,30 @@
         <link rel="stylesheet" href="styles/navbar.css">
     </head>
     <script defer src="js/theme-toggle.js"></script>
+    <script defer src="js/navbar-toggle.js"></script>
     <body>
         <header>
             <nav class="navbar", id="navbar">
-                <ul class="nav-links">
+                <ul class="icons">
                     <li><a href="#home">Home</a></li>
+                    <button type="button" id="theme-toggle" aria-label="dark">light</button>
+                </ul>
+                <button class="menu-toggle" id="menu-toggle" aria-label="toggle navbar menu">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-label="navbar dropdown toggle">
+                    <rect y="11" width="24" height="2" rx="1"/>
+                    <rect y="4" width="24" height="2" rx="1"/>
+                    <rect y="18" width="24" height="2" rx="1"/></svg>
+                </button>
+                <ul class="right-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Information</a></li>
                     <li><a href="assets/files/resume.pdf">Resume</a></li>
                 </ul>
-                <button type="button" id="theme-toggle" aria-label="dark">light</button>
             </nav>
         </header>
         <section class="home" id="home">
