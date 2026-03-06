@@ -12,52 +12,72 @@
     <body>
         <header>
             <nav class="navbar", id="navbar">
-                <ul class="icons">
-                    <li><a href="#home">Home</a></li>
-                    <button type="button" id="theme-toggle" aria-label="dark">light</button>
+                <ul class="left-nav">
+                    <!-- Home button -->
+                    <li><a href="#home" class="home-icon" aria-label="home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="logo" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                        </svg>
+                    </a></li>
+
+                    <!-- Theme toggle -->
+                    <li><button id="theme-toggle" aria-label="toggle theme">
+                        <!-- Icon during dark mode -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" id="dark-icon" viewBox="0 0 16 16">
+                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                        </svg>
+                        <!-- Icon during light mode -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" id="light-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.23 4.35A6 6 0 0 0 2 6c0 1.691.7 3.22 1.826 4.31.203.196.359.4.453.619l.762 1.769A.5.5 0 0 0 5.5 13a.5.5 0 0 0 0 1 .5.5 0 0 0 0 1l.224.447a1 1 0 0 0 .894.553h2.764a1 1 0 0 0 .894-.553L10.5 15a.5.5 0 0 0 0-1 .5.5 0 0 0 0-1 .5.5 0 0 0 .288-.091L9.878 12H5.83l-.632-1.467a3 3 0 0 0-.676-.941 4.98 4.98 0 0 1-1.455-4.405zm1.588-2.653.708.707a5 5 0 0 1 7.07 7.07l.707.707a6 6 0 0 0-8.484-8.484zm-2.172-.051a.5.5 0 0 1 .708 0l12 12a.5.5 0 0 1-.708.708l-12-12a.5.5 0 0 1 0-.708"/>
+                        </svg>
+
+                    </button></li>
                 </ul>
-                <button class="menu-toggle" id="menu-toggle" aria-label="toggle navbar menu">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-label="navbar dropdown toggle">
-                    <rect y="11" width="24" height="2" rx="1"/>
-                    <rect y="4" width="24" height="2" rx="1"/>
-                    <rect y="18" width="24" height="2" rx="1"/></svg>
-                </button>
-                <ul class="right-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="assets/files/resume.pdf">Resume</a></li>
-                </ul>
+
+                <div class="right-nav">
+                    <ul class="right-nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="assets/files/resume.pdf">Resume</a></li>
+                    </ul>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="toggle navbar menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-label="navbar dropdown toggle">
+                            <rect y="11" width="24" height="2" rx="1"/>
+                            <rect y="4" width="24" height="2" rx="1"/>
+                            <rect y="18" width="24" height="2" rx="1"/>
+                        </svg>
+                    </button>
+                </div>
             </nav>
         </header>
 
-            <section class="home" id="home">
-                <h1>Hi, I'm C. Nguyen</h1>
-                <h2>Who am i...?</h2>
-                <p>I'm a passionate computer science student interested in XYZ</p>
-            </section>
-            <section class="about" id="about">
-                <h1>About Me</h1>
-                <p>I'm doing this right now. I also have hobbies somehow</p>
-            </section>
-            <section class="work" id="work">
-                <h1>Work</h1>
-                <p>I be working. That's crazy</p>
-            </section>
-            <section class="projects" id="projects">
-                <h1>Projects</h1>
-                <p>I really like Miku...</p>
-            </section>
-            <footer>
-                <h3>My contacts</h3>
-                <p>Author: C. Nguyen</p>
-                <a href="mailto:cindynguyen7544@gmail.com">Email: cindynguyen7544@gmail.com</a>
-            </footer>
+        <div class="header-blur"></div>
+        <section class="home" id="home">
+            <h1>Hi, I'm C. Nguyen</h1>
+            <h2>Who am i...?</h2>
+            <p>I'm a passionate computer science student interested in XYZ</p>
+        </section>
+        <section class="about" id="about">
+            <h1>About Me</h1>
+            <p>I'm doing this right now. I also have hobbies somehow</p>
+        </section>
+        <section class="work" id="work">
+            <h1>Work</h1>
+            <p>I be working. That's crazy</p>
+        </section>
+        <section class="projects" id="projects">
+            <h1>Projects</h1>
+            <p>I really like Miku...</p>
+        </section>
+        <footer>
+            <h3>My contacts</h3>
+            <p>Author: C. Nguyen</p>
+            <a href="mailto:cindynguyen7544@gmail.com">Email: cindynguyen7544@gmail.com</a>
+        </footer>
 
+        <div class="right-drawer"></div>
         <div class="blur"></div>
 
     </body>

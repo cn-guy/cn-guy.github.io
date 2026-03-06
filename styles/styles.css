@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /* background-color: var(--bg); */
 }
 
 :root {
@@ -27,7 +26,7 @@
 
 }
 
-[theme="light"]{
+:root[theme="light"]{
     --bg: #ffcf80;
     --primary: #ad3713;
     --secondary: #bb7059;
@@ -35,7 +34,7 @@
     --highlight: #fffed9;
 }
 
-[theme="dark"]{
+:root[theme="dark"]{
     --bg: #0b0b3b;
     --primary: #75fbed;
     --secondary: #6a7bc4;
@@ -43,12 +42,16 @@
     --highlight: #eb0095;
 }
 
+html {
+    overflow-x: visible;
+}
+
 body {
+    overflow-x: hidden;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
     background-color: var(--bg);
     color: var(--text);
-    transition: all 0.5s;
 }
 
 h1 {
@@ -62,15 +65,15 @@ h2 {
 }
 
 button {
-    background-color: var(--bg);
-    color: var(--primary);
     border: none;
-    transition: all 0.5s;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
 }
 
 ::selection {
+    background-color: var(--highlight);
     color: var(--bg);
-    background: var(--highlight);
 }
 
 a {
@@ -80,8 +83,6 @@ a {
 .flex-item,
 .grid-item {
     padding: 10px;
-    background-color: var(--purple);
-    color: var(--white);
     font-size: 2.4em;
     text-align: center;
 }

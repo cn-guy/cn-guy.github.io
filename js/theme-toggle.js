@@ -1,17 +1,16 @@
+//Handles theme toggling
+
 const button = document.getElementById("theme-toggle");
 
 button.addEventListener("click", () => {
-    //Change the theme
+    //Determine which theme to change to
     const elem = document.querySelector("html")
     currentTheme = elem.getAttribute("theme")
 
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     
-    //Change button text
-    const newButtonText = newTheme === "dark" ? "light" : "dark";
-    button.setAttribute("aria-label", newButtonText);
-    button.textContent = newButtonText;
-
-    //Change the theme in CSS
+    //Change to the new theme by setting the class = 'dark-mode'
     document.querySelector("html").setAttribute("theme", newTheme);
+
+    document.body.classList.toggle('dark-mode');
 });
