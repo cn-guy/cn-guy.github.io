@@ -154,6 +154,21 @@ section.home {
     opacity: 0;
 }
 
+form {
+    display: inline-block;
+    border: var(--highlight) 3px solid;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+}
+
+textarea {
+    display: flex;
+    align-items: right;
+}
+
 @media (min-width: 320px) and (max-width: 767px){
     .inner-content {
         flex-direction: column;

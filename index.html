@@ -88,8 +88,29 @@
             <p>I really like Miku...</p>
         </section>
         <section class="contact" id="contact">
-            <h1>My contacts</h1>
-            <a href="mailto:cindynguyen7544@gmail.com">Email: cindynguyen7544@gmail.com</a>
+            <h1>Email Me</h1>
+            <form id="contact-form" action="mailto:cindynguyen7544@gmail.com" method="post" enctype="text/plain">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"/>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email"/>
+                </p>
+                <p>
+                    <label for="subject">Subject:</label>
+                    <textarea id="subject" name="user_subject"></textarea>
+                </p>
+                <p>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_msg"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit">Send your message</button>
+                </p>
+            </form>
+            <script defer src="js/contact-form.js"></script>
         </section>
         <footer>
             <p>Author: C. Nguyen</p>
