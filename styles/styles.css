@@ -109,6 +109,81 @@ section {
 section.home {
     border: var(--highlight) 3px solid;
     box-shadow: 4px 4px 10px var(--highlight);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title container */
+.title-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+/* Flags */
+div.flags {
+    margin-right: 0.25em;
+}
+
+.title-container ul {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 0.5em;
+}
+
+.flag-list {
+    list-style: none;
+}
+
+.flag-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Title content */
+.title-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.title-content p {
+    align-self: center;
+}
+
+.title-content ul {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 0;
+}
+
+/* Social media container */
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    /* justify-content: left; */
+
+
+    margin: 0;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media-icon {
+    width: 45px;
+    height: 45px;
+
+    color: var(--primary);
+    
+}
+
+a:hover .social-media-icon {
+    color: var(--highlight);
 }
 
 /* Image in About section */
@@ -154,6 +229,7 @@ section.home {
     opacity: 0;
 }
 
+/* Form styling */
 form {
     display: inline-block;
     border: var(--highlight) 3px solid;
@@ -167,6 +243,27 @@ label {
 textarea {
     display: flex;
     align-items: right;
+}
+
+/* Job experience accordion styling */
+summary {
+    color: var(--bg);
+    background-color: var(--secondary);
+    padding: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+summary:hover {
+    color: var(--primary);
+}
+
+details {
+    padding: 0.5em;
+}
+
+.work li {
+    padding: 0.5em;
 }
 
 @media (min-width: 320px) and (max-width: 767px){

@@ -61,14 +61,15 @@ nav ul{
     height: 25px;
 }
 
-.navbar .icon {
+.icon {
     color: var(--primary);
     width: 20px;
     height: 20px;
 }
 
-.navbar button:hover .icon,
-.navbar a:hover .logo {
+button:hover .icon,
+a:hover .logo,
+a:hover .icon {
     color: var(--highlight);
 }
 
