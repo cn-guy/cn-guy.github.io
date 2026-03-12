@@ -2,30 +2,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    /*! Delete later once colors have been solidified*/
-  --white: #fcfcfc;
-  --black: #040404;
-
-  --gray1: #333333;
-  --gray2: #555555;
-  --gray3: #cccccc;
-  --gray4: #aaaaaa;
-
-  --teal: #006060;
-  --lightteal: #008080;
-  --purple: #800080;
-  --lavender: #e6e6fa;
-  --slateblue: #6a5acd;
-  --navy: #000080;
-  --blue: #1e90ff;
-  --violetred: #c71585;
-  --orange: #ffa500;
-  --red: #dc143c;
-  --green: #006400;
-
-}
-
 :root[theme="light"]{
     --bg: #ffcf80;
     --primary: #ad3713;
@@ -40,6 +16,8 @@
     --secondary: #6a7bc4;
     --text: #c7e3f2;
     --highlight: #eb0095;
+    --sp_white: #f8f8fa;
+    --sp_grey: #8694b7;
 }
 
 html {
@@ -229,22 +207,6 @@ a:hover .social-media-icon {
     opacity: 0;
 }
 
-/* Form styling */
-form {
-    display: inline-block;
-    border: var(--highlight) 3px solid;
-}
-
-label {
-    display: inline-block;
-    text-align: right;
-}
-
-textarea {
-    display: flex;
-    align-items: right;
-}
-
 /* Job experience accordion styling */
 summary {
     color: var(--bg);
@@ -266,6 +228,17 @@ details {
     padding: 0.5em;
 }
 
+details p {
+    margin: 0 auto;
+
+    width: fit-content;
+    text-align: center;
+    padding-top: 1em;
+
+    color: var(--primary);
+}
+
+/* Resizing for mobile users */
 @media (min-width: 320px) and (max-width: 767px){
     .inner-content {
         flex-direction: column;
@@ -279,5 +252,64 @@ details {
         align-self: center;
 
     }
+
+}
+
+/* Form styling */
+form {
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+}
+
+input, textarea {
+    display: inline-block;
+    align-items: right;
+
+    width: 200px;
+
+    font-family: 'Lucida Console', monospace;
+    border: var(--sp_grey) 3px solid;
+    background-color: var(--text);
+
+    color: var(--bg);
+}
+
+textarea {
+    height: 22px;
+}
+
+input:focus, textarea:focus {
+    outline-style: solid;
+    outline-color: var(--highlight);
+}
+
+button[type="submit"] {
+    border: var(--sp_grey) 3px solid;
+    background-color: var(--sp_white);
+
+    font-family: 'Lucida Console', monospace;
+    color: var(--bg);
+
+    margin-left: 3em;
+
+    margin-top: 1em;
+
+}
+
+button[type="submit"]:hover {
+    background-color: var(--highlight);
+}
+
+footer {
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 1em;
+
+    font-size: 12px;
 
 }
