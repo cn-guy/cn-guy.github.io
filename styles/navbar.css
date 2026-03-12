@@ -185,7 +185,7 @@ body.dark-mode #dark-icon {
         width: var(--drawer-size);
         height: 100vh;
         z-index: 3;
-        background-color: var(--secondary);
+        background-color: var(--drawer-color);
         transform: translateX(100%);
         transition: transform 0.4s ease-in-out;
     }

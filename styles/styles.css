@@ -2,12 +2,34 @@
     box-sizing: border-box;
 }
 
-:root[theme="light"]{
+:root[theme="light-original"]{
     --bg: #ffcf80;
     --primary: #ad3713;
     --secondary: #bb7059;
     --text: #433535;
     --highlight: #fffed9;
+
+    --drawer: #bb7059;
+    --form-text: #f8f8fa;
+
+    --sp_white: #f8f8fa;
+    --sp_grey: #8694b7;
+}
+
+:root[theme="light"]{
+    --bg: #fff8ed;
+    --primary: #962d15;
+    --secondary: #ad3713;
+    --text: #433535;
+    --highlight: #f79430;
+
+    --drawer-color: #eac6b5;
+    --work-highlight: #ffcf80;
+    --form-text: #f8f8fa;
+    --form-input: #433535;
+
+    --sp_white: #f8f8fa;
+    --sp_grey: #8694b7;
 }
 
 :root[theme="dark"]{
@@ -16,6 +38,12 @@
     --secondary: #6a7bc4;
     --text: #c7e3f2;
     --highlight: #eb0095;
+
+    --drawer-color: #6a7bc4;
+    --work-highlight: #75fbed;
+    --form-text: #c7e3f2;
+    --form-input: #0b0b3b;
+
     --sp_white: #f8f8fa;
     --sp_grey: #8694b7;
 }
@@ -217,7 +245,7 @@ summary {
 }
 
 summary:hover {
-    color: var(--primary);
+    color: var(--work-highlight);
 }
 
 details {
@@ -274,9 +302,9 @@ input, textarea {
 
     font-family: 'Lucida Console', monospace;
     border: var(--sp_grey) 3px solid;
-    background-color: var(--text);
+    background-color: var(--form-text);
 
-    color: var(--bg);
+    color: var(--form-input);
 }
 
 textarea {
@@ -293,7 +321,7 @@ button[type="submit"] {
     background-color: var(--sp_white);
 
     font-family: 'Lucida Console', monospace;
-    color: var(--bg);
+    color: var(--form-input);
 
     margin-left: 3em;
 
