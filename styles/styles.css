@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-    color: var(--secondary);
+    color: var(--bg);
 }
 
 button {
@@ -266,21 +266,74 @@ details p {
     color: var(--primary);
 }
 
-/* Resizing for mobile users */
-@media (min-width: 320px) and (max-width: 767px){
-    .inner-content {
-        flex-direction: column;
-        align-items: center;
+/* Project card styling */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0.75em;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.project-card p {
+    color: var(--bg);
+}
+
+.project-card:hover {
+    h2 {
+        color: var(--work-highlight);
     }
 
-    .inner-content .about-me-img {
-        margin: 0;
-        width: 50vw;
-
-        align-self: center;
-
+    .project-icons {
+        color: var(--highlight);
+        opacity: 100%;
     }
+}
 
+.card-links {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.project-card ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.project-card li {
+    color: var(--bg);
+
+    background: var(--text);
+    border-radius: 10px;
+
+    list-style: none;
+    display: inline-block;
+
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+.project-icons {
+    display: flex;
+    width: 50%;
+    height: 50%;
+
+    color: var(--bg);
+    opacity: 25%;
 }
 
 /* Form styling */
@@ -339,5 +392,22 @@ footer {
     padding-bottom: 1em;
 
     font-size: 12px;
+
+}
+
+/* Resizing for mobile users */
+@media (min-width: 320px) and (max-width: 767px){
+    .inner-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-content .about-me-img {
+        margin: 0;
+        width: 50vw;
+
+        align-self: center;
+
+    }
 
 }
