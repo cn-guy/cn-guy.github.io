@@ -1,418 +1,415 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Light/dark mode themes */
-:root[theme="light"]{
-    --bg: #fff8ed;
-    --primary: #962d15;
-    --secondary: #ad3713;
-    --text: #433535;
-    --highlight: #f79430;
+:root[theme="light"] {
+  --bg: #fff8ed;
+  --primary: #962d15;
+  --secondary: #ad3713;
+  --text: #433535;
+  --highlight: #f79430;
 
-    --drawer-color: #eac6b5;
-    --work-highlight: #ffcf80;
-    --form-text: #f8f8fa;
-    --form-input: #433535;
+  --drawer-color: #eac6b5;
+  --work-highlight: #ffcf80;
+  --form-text: #f8f8fa;
+  --form-input: #433535;
 
-    --sp_white: #f8f8fa;
-    --sp_grey: #8694b7;
+  --sp_white: #f8f8fa;
+  --sp_grey: #8694b7;
 }
 
-:root[theme="dark"]{
-    --bg: #0b0b3b;
-    --primary: #75fbed;
-    --secondary: #6a7bc4;
-    --text: #c7e3f2;
-    --highlight: #eb0095;
+:root[theme="dark"] {
+  --bg: #0b0b3b;
+  --primary: #75fbed;
+  --secondary: #6a7bc4;
+  --text: #c7e3f2;
+  --highlight: #eb0095;
 
-    --drawer-color: #6a7bc4;
-    --work-highlight: #75fbed;
-    --form-text: #c7e3f2;
-    --form-input: #0b0b3b;
+  --drawer-color: #6a7bc4;
+  --work-highlight: #75fbed;
+  --form-text: #c7e3f2;
+  --form-input: #0b0b3b;
 
-    --sp_white: #f8f8fa;
-    --sp_grey: #8694b7;
+  --sp_white: #f8f8fa;
+  --sp_grey: #8694b7;
 }
 
 html {
-    overflow-x: visible; 
-    scroll-padding-top: 100px; /* This is for the header, so when you click the home page the home page is not blocked by the navbar */
+  overflow-x: visible;
+  scroll-padding-top: 100px; /* This is for the header, so when you click the home page the home page is not blocked by the navbar */
 }
 
 body {
-    overflow-x: hidden; /* Disable the horizontal scroll bar entirely */
-    font-family: 'Lucida Console', monospace;
-    font-size: 1.2em;
-    background-color: var(--bg);
-    color: var(--text);
+  overflow-x: hidden; /* Disable the horizontal scroll bar entirely */
+  font-family: "Lucida Console", monospace;
+  font-size: 1.2em;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 /* Headers */
 h1 {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 h2 {
-    color: var(--bg);
+  color: var(--bg);
 }
 
 /* Buttons */
 button {
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 1em;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
 }
 
 /* Highlight colors */
 ::selection {
-    background-color: var(--highlight);
-    color: var(--bg);
+  background-color: var(--highlight);
+  color: var(--bg);
 }
 
 /* Links */
 a {
-    color: var(--highlight);
+  color: var(--highlight);
 }
 
 .flex-item,
 .grid-item {
-    padding: 10px;
-    font-size: 2.4em;
-    text-align: center;
+  padding: 10px;
+  font-size: 2.4em;
+  text-align: center;
 }
 
 .flex-item {
-    width: 160px;
-    height: 80px;
-    margin: 10px;
+  width: 160px;
+  height: 80px;
+  margin: 10px;
 }
 
 /* Sections for each different part of the website */
 section {
-    padding-left: 2vw;
-    padding-right: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
 
-    width: min(100% - 2em, 950px);
-    border-radius: 15px;
-
+  width: min(100% - 2em, 950px);
+  border-radius: 15px;
 }
 
 /* Title card */
 section.home {
-    border: var(--highlight) 3px solid;
-    box-shadow: 4px 4px 10px var(--highlight);
+  border: var(--highlight) 3px solid;
+  box-shadow: 4px 4px 10px var(--highlight);
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Title container */
 .title-container {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Flags */
 div.flags {
-    margin-right: 0.25em;
+  margin-right: 0.25em;
 }
 
 .title-container ul {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-    gap: 0.5em;
+  gap: 0.5em;
 }
 
 .flag-list {
-    list-style: none;
+  list-style: none;
 }
 
 .flag-icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Title content */
 .title-content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
 .title-content p {
-    align-self: center;
+  align-self: center;
 }
 
 .title-content ul {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-    padding: 0;
+  padding: 0;
 }
 
 /* Social media container */
 .social-media {
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-    /* justify-content: left; */
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  /* justify-content: left; */
 
-
-    margin: 0;
+  margin: 0;
 }
 
 .social-media li {
-    list-style: none;
+  list-style: none;
 }
 
 .social-media-icon {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 
-    color: var(--primary);
-    
+  color: var(--primary);
 }
 
 a:hover .social-media-icon {
-    color: var(--highlight);
+  color: var(--highlight);
 }
 
 /* Image in About section */
 .inner-content {
-    display: flex;
+  display: flex;
 
-    padding: 1em;
-    padding-top: 0;
-    gap: 0.5em;
+  padding: 1em;
+  padding-top: 0;
+  gap: 0.5em;
 }
 
 .inner-text {
-    width: 100%;
+  width: 100%;
 }
 
-.inner-content .about-me-img{
-    margin-left: auto;
+.inner-content .about-me-img {
+  margin-left: auto;
 
-    width: fit-content;
-    height: fit-content;
+  width: fit-content;
+  height: fit-content;
 }
 
 .about-me-img {
-    position: relative;
-    width: 300px;
+  position: relative;
+  width: 300px;
 }
 
 .about-me-img img {
-    display:block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .about-me-img::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--secondary);
-    opacity: 0.5;
-    transition: opacity 0.4s ease;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--secondary);
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
 }
 
 .about-me-img:hover::after {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Job experience accordion styling */
 summary {
-    color: var(--bg);
-    background-color: var(--secondary);
-    padding: 1em;
-    border-radius: 20px;
-    cursor: pointer;
+  color: var(--bg);
+  background-color: var(--secondary);
+  padding: 1em;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 summary:hover {
-    color: var(--work-highlight);
+  color: var(--work-highlight);
 }
 
 details {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 .work li {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 details p {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    width: fit-content;
-    text-align: center;
-    padding-top: 1em;
+  width: fit-content;
+  text-align: center;
+  padding-top: 1em;
 
-    color: var(--primary);
+  color: var(--primary);
 }
 
 /* Project card styling */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    padding: 0.75em;
-    background-color: var(--secondary);
-    border-radius: 10px;
+  padding: 0.75em;
+  background-color: var(--secondary);
+  border-radius: 10px;
 }
 
 .project-card p {
-    color: var(--bg);
+  color: var(--bg);
 }
 
 .project-card:hover {
-    h2 {
-        color: var(--work-highlight);
-    }
+  h2 {
+    color: var(--work-highlight);
+  }
 
-    .project-icons {
-        color: var(--highlight);
-        opacity: 100%;
-    }
+  .project-icons {
+    color: var(--highlight);
+    opacity: 100%;
+  }
 }
 
 .card-links {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .project-card ul {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 1em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 .project-card li {
-    color: var(--bg);
+  color: var(--bg);
 
-    background: var(--text);
-    border-radius: 10px;
+  background: var(--text);
+  border-radius: 10px;
 
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 
-    padding: 0.25em;
-    margin: 0.25em;
+  padding: 0.25em;
+  margin: 0.25em;
 }
 
 .project-icons {
-    display: flex;
-    width: 50%;
-    height: 50%;
+  display: flex;
+  width: 50%;
+  height: 50%;
 
-    color: var(--bg);
-    opacity: 25%;
+  color: var(--bg);
+  opacity: 25%;
 }
 
 /* Form styling */
 form {
-    display: inline-block;
+  display: inline-block;
 }
 
 label {
-    display: inline-block;
-    min-width: 120px;
-    text-align: right;
+  display: inline-block;
+  min-width: 120px;
+  text-align: right;
 }
 
-input, textarea {
-    display: inline-block;
-    align-items: right;
+input,
+textarea {
+  display: inline-block;
+  align-items: right;
 
-    width: 200px;
+  width: 200px;
 
-    font-family: 'Lucida Console', monospace;
-    border: var(--sp_grey) 3px solid;
-    background-color: var(--form-text);
+  font-family: "Lucida Console", monospace;
+  border: var(--sp_grey) 3px solid;
+  background-color: var(--form-text);
 
-    color: var(--form-input);
+  color: var(--form-input);
 }
 
 textarea {
-    height: 22px;
+  height: 22px;
 }
 
-input:focus, textarea:focus {
-    outline-style: solid;
-    outline-color: var(--highlight);
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: var(--highlight);
 }
 
 button[type="submit"] {
-    border: var(--sp_grey) 3px solid;
-    background-color: var(--sp_white);
+  border: var(--sp_grey) 3px solid;
+  background-color: var(--sp_white);
 
-    font-family: 'Lucida Console', monospace;
-    color: var(--form-input);
+  font-family: "Lucida Console", monospace;
+  color: var(--form-input);
 
-    margin-left: 3em;
+  margin-left: 3em;
 
-    margin-top: 1em;
-
+  margin-top: 1em;
 }
 
 button[type="submit"]:hover {
-    background-color: var(--highlight);
+  background-color: var(--highlight);
 }
 
 footer {
-    text-align: center;
-    padding-top: 5vw;
-    padding-bottom: 1em;
+  text-align: center;
+  padding-top: 5vw;
+  padding-bottom: 1em;
 
-    font-size: 12px;
-
+  font-size: 12px;
 }
 
 /* Resizing for mobile users */
-@media (min-width: 320px) and (max-width: 767px){
-    /* Centering all content on mobile for easier readability */
-    .inner-content {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Centering all content on mobile for easier readability */
+  .inner-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* Center image for About Me section */
-    .inner-content .about-me-img {
-        margin: 0;
-        width: 50vw;
+  /* Center image for About Me section */
+  .inner-content .about-me-img {
+    margin: 0;
+    width: 50vw;
 
-        align-self: center;
+    align-self: center;
+  }
 
-    }
+  /* Restyled form */
 
-    /* Restyled form */
+  /* Minimized text area, repositioned submit button */
+  input,
+  textarea {
+    width: 150px;
+  }
 
-    /* Minimized text area, repositioned submit button */
-    input, textarea {
-        width: 150px;
-    }
-
-    button[type="submit"] {
-        margin-left: 1.5em;
-    }
+  button[type="submit"] {
+    margin-left: 1.5em;
+  }
 }
