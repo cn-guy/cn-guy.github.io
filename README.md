@@ -32,6 +32,8 @@ Code/Inspiration:
 - [`caterinasworld`'s `web-development-class-lab-notebook`](https://github.com/caterinasworld/web-development-class-lab-notebookhttps://github.com/caterinasworld)
 - [Brittany Chiang](https://v4.brittanychiang.com/)
 - [Fahru Muhamad](https://fahru.me/)
+- [DELTARUNE](https://deltarune.com/) by Toby Fox
+- [Deltarune Wiki](https://deltarune-archive.fandom.com/wiki/Kris%27s_Room)
 
 <u>__Full documentation + outside resources used__</u>:
 
