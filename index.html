@@ -9,6 +9,7 @@
     </head>
     <script defer src="js/theme-toggle.js"></script>
     <script defer src="js/navbar-toggle.js"></script>
+    <script defer src="js/contact-form.js"></script>
     <body>
         <header>
             <nav class="navbar", id="navbar">
@@ -53,10 +54,15 @@
             </nav>
         </header>
 
+        <!-- Blur for navbar -->
         <div class="header-blur"></div>
+
+        <!-- Home/title card -->
         <section class="home" id="home">
             <div class="title-container" id="title-container">
                 <h1>Hi, I'm C. Nguyen!</h1>
+
+                <!-- Flag icons -->
                 <div class="flags" id="flags">
                     <ul class="flag-list" id="flag-list">
                         <li>
@@ -103,6 +109,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Title card content + social media links -->
             <div class="title-content" id="title-content">
                 <p>CompSci student @ Portland State University</p>
                 <ul class="social-media" id="social-media">
@@ -119,6 +127,8 @@
                 </ul>
             </div>
         </section>
+
+        <!-- About Me section -->
         <section class="about" id="about">
             <h1>About Me</h1>
             <div class="inner-content">
@@ -127,11 +137,12 @@
                     <p>Growing up, I've always been interested in and surrounded by technology, especially when music and vocal synths are involved. I've been fascinated with vocal synths for as long as I could remember, and it continues to be one of my special interests today!</p>
                     <p>Outside of school and work, I like to work on my personal projects. My main personal project right now is creating a RVC AI voice model and keeping up to date with the latest vsynth technology.</p>
                 </div>
-                <div class="about-me-img">
+                <div class="about-me-img"> <!-- Image of me (optional) -->
                     <img src="assets/images/polaroid.jpg" width="40%" height="40%" alt="The developer, next to wisteria blossoms"/>
                 </div>
             </div>
         </section>
+        <!-- Jobs Accordion implementation -->
         <section class="work" id="work">
             <h1>Work Experience</h1>
             <p>I've worked at a lot of different places!</p>
@@ -172,6 +183,8 @@
                 </ul>
             </details>
         </section>
+
+        <!-- Personal Project cards -->
         <section class="projects" id="projects">
             <h1>Personal Projects</h1>
             <p>Here are all of my projects, primarily around vocal synths!</p>
@@ -410,6 +423,7 @@
                 </div>
             </div>
         </section>
+        <!-- Email Form -->
         <section class="contact" id="contact">
             <h1>Email Me</h1>
             <p>Want to contact me for business inquiries, questions, etc.?</p>
@@ -434,14 +448,16 @@
                     <button type="submit">Send your message!</button>
                 </p>
             </form>
-            <script defer src="js/contact-form.js"></script>
         </section>
+        <!-- Footer text - copyrights -->
         <footer>
             <p>Copyright © 2026 C. Nguyen (cn-guy). All rights reserved.</p>
             <p></p>
         </footer>
 
+        <!-- Drawer for responsive navbar -->
         <div class="right-drawer"></div>
+        <!-- Blur for when drawer is activated -->
         <div class="blur"></div>
 
     </body>

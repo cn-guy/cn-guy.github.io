@@ -2,20 +2,7 @@
     box-sizing: border-box;
 }
 
-:root[theme="light-original"]{
-    --bg: #ffcf80;
-    --primary: #ad3713;
-    --secondary: #bb7059;
-    --text: #433535;
-    --highlight: #fffed9;
-
-    --drawer: #bb7059;
-    --form-text: #f8f8fa;
-
-    --sp_white: #f8f8fa;
-    --sp_grey: #8694b7;
-}
-
+/* Light/dark mode themes */
 :root[theme="light"]{
     --bg: #fff8ed;
     --primary: #962d15;
@@ -49,18 +36,19 @@
 }
 
 html {
-    overflow-x: visible;
-    scroll-padding-top: 100px;
+    overflow-x: visible; 
+    scroll-padding-top: 100px; /* This is for the header, so when you click the home page the home page is not blocked by the navbar */
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Disable the horizontal scroll bar entirely */
     font-family: 'Lucida Console', monospace;
     font-size: 1.2em;
     background-color: var(--bg);
     color: var(--text);
 }
 
+/* Headers */
 h1 {
     color: var(--primary);
 }
@@ -69,6 +57,7 @@ h2 {
     color: var(--bg);
 }
 
+/* Buttons */
 button {
     border: none;
     cursor: pointer;
@@ -76,11 +65,13 @@ button {
     font-size: 1em;
 }
 
+/* Highlight colors */
 ::selection {
     background-color: var(--highlight);
     color: var(--bg);
 }
 
+/* Links */
 a {
     color: var(--highlight);
 }
@@ -98,6 +89,7 @@ a {
     margin: 10px;
 }
 
+/* Sections for each different part of the website */
 section {
     padding-left: 2vw;
     padding-right: 2vw;
@@ -112,6 +104,7 @@ section {
 
 }
 
+/* Title card */
 section.home {
     border: var(--highlight) 3px solid;
     box-shadow: 4px 4px 10px var(--highlight);
@@ -397,11 +390,13 @@ footer {
 
 /* Resizing for mobile users */
 @media (min-width: 320px) and (max-width: 767px){
+    /* Centering all content on mobile for easier readability */
     .inner-content {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Center image for About Me section */
     .inner-content .about-me-img {
         margin: 0;
         width: 50vw;
@@ -410,4 +405,14 @@ footer {
 
     }
 
+    /* Restyled form */
+
+    /* Minimized text area, repositioned submit button */
+    input, textarea {
+        width: 150px;
+    }
+
+    button[type="submit"] {
+        margin-left: 1.5em;
+    }
 }

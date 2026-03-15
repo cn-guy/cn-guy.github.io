@@ -3,6 +3,7 @@
     --drawer-size: 50vw;
 }
 
+/* Styling so header/navbar is always on screen and blurs everything behind it */
 header {
     position: sticky;
     top: 0;
